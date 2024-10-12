@@ -1,0 +1,3 @@
+#!/bin/bash
+# build/ARM/gem5.debug --debug-flags=MinorTrace --debug-file="debug.trace" configs/example/se.py --cpu-type MinorCPU --caches --l1d_size 8kB --l1i_size 8kB --l1d_assoc 4 --l1i_assoc 4 --l2_size 1MB --l2_assoc 8 --cacheline_size 64 --cpu-clock 1GHz -n 1 -c ~/file/queens.o -o "8"
+build/ARM/gem5.debug --debug-flags=MinorTrace --debug-file="debug.trace" configs/example/se.py --cpu-type MinorCPU --caches -c tests/test-progs/hello/bin/arm/linux/hello
